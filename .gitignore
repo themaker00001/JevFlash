@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Model checkpoints and tokenizer/config dumps are large binaries; keep only
+# the small JSON summaries (train_log, summary, timing, target_audit) in git.
+runs/**/*.safetensors
+runs/**/tokenizer/
+runs/**/backbone_config/
+runs/**/*.jsonl
+
+# Hugging Face download cache if it ever lands inside the project
+.cache/
