@@ -150,6 +150,44 @@ python jevflash/play_doom.py --checkpoint-dir runs/doom_basic_0.6b \
   --output results/doom_basic_eval.json
 ```
 
+### Attempt 2: DAgger data + frozen backbone (failed, kept for the record)
+
+Diagnosis of attempt 1: the training data only contained states visited by
+the heuristic's own clean trajectory, so the model never saw how to
+recover from a mistake. Fix attempted: `jevflash/collect_dagger_doom.py`
+lets the *trained* model drive its own live rollouts (16 episodes), labels
+every state it visits with the heuristic's corrective action (not the
+model's), and aggregates that with the original data — standard DAgger
+(Ross et al., 2011). This took training data from 110 to 648 questions.
+Separately, `train.py` gained `--freeze-backbone` (train only the decision
+head, backbone never unfreezes) on the theory that fully fine-tuning a
+0.6B model on this little data was itself the overfitting risk.
+
+Result: **worse, not better — 0% success (0/20)**, every episode timed
+out. Checked `predictions.jsonl` directly: the model predicts `"left"` for
+**100% of all 149 test questions**, matching the offline "accuracy" of
+43.6% purely because `left` happens to be the plurality gold label (65/149).
+It learned zero state-dependent behavior; dev accuracy was identically
+36.7% at every single eval checkpoint from step 12 through step 132 — a
+constant-prediction plateau, not a training curve.
+
+Takeaway: freezing the *entire* backbone was too aggressive for this task.
+A frozen, generically-pretrained LM's hidden states apparently don't
+linearly expose "target position relative to screen center" well enough
+for a small head to extract without any backbone adaptation. The DAgger
+data-aggregation idea itself is still sound — it just hasn't been tested
+with an approach that can actually learn from it. Attempt 3 (below) reuses
+the same full-fine-tuning setup that worked in attempt 1, on this larger
+attempt-2 dataset, to isolate that variable.
+
+### Attempt 3: DAgger data + full fine-tuning (in progress)
+
+Same training approach as attempt 1 (full backbone fine-tuning, gradient
+checkpointing) but on the attempt-2 combined dataset (648 train questions:
+110 original heuristic + 538 DAgger-collected recovery states). Results
+pending — see `runs/doom_basic_0.6b_dagger_full/` and this section will be
+updated once it completes.
+
 ## License
 
 MIT (see [LICENSE](LICENSE)). `jevflash/train.py` and
