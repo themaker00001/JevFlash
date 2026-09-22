@@ -1,0 +1,3 @@
+# Optional, headless shooting environment used by jevflash/doom_env.py.
+vizdoom==1.3.0
+gymnasium==1.3.0

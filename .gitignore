@@ -12,3 +12,6 @@ runs/**/*.jsonl
 
 # Hugging Face download cache if it ever lands inside the project
 .cache/
+
+# ViZDoom writes its runtime config wherever the process's cwd happens to be
+_vizdoom.ini

@@ -336,6 +336,12 @@ def main():
                                use_chat=not args.model.endswith('-Base'), device=device)
     model = DecisionModel(lm.model, args.set_head).to(device)
     del lm
+    # Full backbone fine-tuning retains every layer's activations for backward.
+    # That's cheap for short (~70 token) sequences but scales catastrophically
+    # with sequence length once the backbone unfreezes (observed 60GB+ resident
+    # and thrashing on ~300-token ViZDoom states vs. the toy dataset's ~70).
+    # Checkpointing trades recompute for memory and keeps this bounded.
+    model.backbone.gradient_checkpointing_enable()
     train = [e for e in bysplit['train'] if args.objective == 'gold' or e['teacher_probs'] is not None]
     if len(train) < args.batch_questions: raise ValueError('Too few valid training questions')
     config = {**vars(args), 'device': device.type,
