@@ -3,6 +3,9 @@ __pycache__/
 *.pyc
 .DS_Store
 
+# Secrets -- never commit
+.env
+
 # Model checkpoints and tokenizer/config dumps are large binaries; keep only
 # the small JSON summaries (train_log, summary, timing, target_audit) in git.
 runs/**/*.safetensors
