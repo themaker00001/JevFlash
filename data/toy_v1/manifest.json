@@ -1,0 +1,138 @@
+{
+  "schema_version": "openjev-toy-v1",
+  "seed": 17,
+  "source": "self_authored_programmatic",
+  "license": "CC0-1.0",
+  "teacher": null,
+  "limits": [
+    "仅用于算法通路试验；不是 JeV 能力复现或现实校准证据。",
+    "按唯一事实组合先分区；表述模板不跨分区，但训练与 ID 测试共享规则。",
+    "OOD 仅为一个新权限/证据规则族；不能据此代表一般跨域能力。"
+  ],
+  "splits": {
+    "train": {
+      "states": 64,
+      "questions": 192,
+      "sha256": "62d344e5e1adc98219c5965264df6826eba44ecb3f9cf3b795f311e3f6b3cbea",
+      "boolean_labels": {
+        "false": 51,
+        "true": 13
+      },
+      "choice_k": {
+        "2": 16,
+        "3": 16,
+        "4": 16,
+        "5": 16
+      },
+      "score_labels": {
+        "2": 16,
+        "1": 18,
+        "3": 13,
+        "0": 17
+      },
+      "languages": {
+        "zh": 32,
+        "en": 32
+      }
+    },
+    "dev": {
+      "states": 16,
+      "questions": 48,
+      "sha256": "2964b73f976fc4e7ce1477701b6269a56e96dd30094b066ccb7fd89a898b3226",
+      "boolean_labels": {
+        "false": 13,
+        "true": 3
+      },
+      "choice_k": {
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 4
+      },
+      "score_labels": {
+        "0": 5,
+        "2": 4,
+        "1": 2,
+        "3": 5
+      },
+      "languages": {
+        "zh": 8,
+        "en": 8
+      }
+    },
+    "calibration": {
+      "states": 16,
+      "questions": 48,
+      "sha256": "59944a4e6e3616c9c942b3e5fa0164f172d9f26eb52fcccc3307a1f1c17fa69c",
+      "boolean_labels": {
+        "false": 14,
+        "true": 2
+      },
+      "choice_k": {
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 4
+      },
+      "score_labels": {
+        "2": 4,
+        "3": 6,
+        "0": 2,
+        "1": 4
+      },
+      "languages": {
+        "zh": 8,
+        "en": 8
+      }
+    },
+    "test": {
+      "states": 32,
+      "questions": 96,
+      "sha256": "e96c5b5b27c724fd6b0071d928016e14987ea81dce2d5f69d83052767b7e7326",
+      "boolean_labels": {
+        "false": 29,
+        "true": 3
+      },
+      "choice_k": {
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8
+      },
+      "score_labels": {
+        "3": 9,
+        "1": 8,
+        "2": 7,
+        "0": 8
+      },
+      "languages": {
+        "zh": 16,
+        "en": 16
+      }
+    },
+    "ood": {
+      "states": 16,
+      "questions": 48,
+      "sha256": "a37460aa3ed458487dd301458500d07515349b8caf0cea3444bd8d1245350094",
+      "boolean_labels": {
+        "true": 4,
+        "false": 12
+      },
+      "choice_k": {
+        "2": 4,
+        "3": 4,
+        "4": 4,
+        "5": 4
+      },
+      "score_labels": {
+        "0": 4,
+        "2": 6,
+        "1": 6
+      },
+      "languages": {
+        "zh": 8,
+        "en": 8
+      }
+    }
+  }
+}
