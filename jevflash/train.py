@@ -309,6 +309,9 @@ def main():
     p.add_argument('--head-lr', type=float, default=2e-4)
     p.add_argument('--device', default='auto', help="auto|cuda|mps|cpu")
     p.add_argument('--skip-native-baseline', action='store_true')
+    p.add_argument('--freeze-backbone', action='store_true',
+                   help="Never unfreeze the backbone; train only the decision head. "
+                        "Much less prone to overfitting on small datasets.")
     args = p.parse_args()
     if args.steps <= 0 or args.head_steps < 0 or args.eval_every <= 0 or args.batch_questions <= 0:
         p.error('steps/eval-every/batch-questions must be positive; head-steps must be nonnegative')
@@ -360,14 +363,19 @@ def main():
     evaluate(model, evaluation, tokenizer.pad_token_id, args.batch_questions, device, out/'untrained_head.jsonl')
     head = [param for name, param in model.named_parameters() if not name.startswith('backbone.')]
     body = list(model.backbone.parameters())
-    optimizer = torch.optim.AdamW([{'params': body, 'lr': args.backbone_lr}, {'params': head, 'lr': args.head_lr}],
-                                  weight_decay=0.01)
+    if args.freeze_backbone:
+        for param in body: param.requires_grad_(False)
+        optimizer = torch.optim.AdamW([{'params': head, 'lr': args.head_lr}], weight_decay=0.01)
+    else:
+        optimizer = torch.optim.AdamW([{'params': body, 'lr': args.backbone_lr}, {'params': head, 'lr': args.head_lr}],
+                                      weight_decay=0.01)
     logs = []; best = float('inf'); best_step = None
     start = time.perf_counter()
     for step in range(args.head_steps+args.steps):
-        warm = step < args.head_steps
-        for param in body: param.requires_grad_(not warm)
-        optimizer.param_groups[1]['lr'] = 1e-3 if warm else args.head_lr
+        warm = (not args.freeze_backbone) and step < args.head_steps
+        if not args.freeze_backbone:
+            for param in body: param.requires_grad_(not warm)
+            optimizer.param_groups[1]['lr'] = 1e-3 if warm else args.head_lr
         batch = random.sample(train, args.batch_questions)
         model.train(); optimizer.zero_grad(set_to_none=True)
         with autocast_ctx(device):
@@ -380,7 +388,8 @@ def main():
             # token/candidate shapes this trainer produces each step, so cached
             # memory climbs monotonically unless it's released explicitly.
             torch.mps.empty_cache()
-        item = {'step': step+1, 'phase': 'head' if warm else 'full', 'loss': float(loss.detach()),
+        item = {'step': step+1, 'phase': 'frozen' if args.freeze_backbone else ('head' if warm else 'full'),
+              'loss': float(loss.detach()),
               'elapsed_seconds': time.perf_counter()-start}
         if not warm and ((step+1-args.head_steps) % args.eval_every == 0 or step+1 == args.head_steps+args.steps):
             metrics = evaluate(model, bysplit['dev'], tokenizer.pad_token_id, args.batch_questions, device)
