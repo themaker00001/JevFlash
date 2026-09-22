@@ -180,13 +180,47 @@ with an approach that can actually learn from it. Attempt 3 (below) reuses
 the same full-fine-tuning setup that worked in attempt 1, on this larger
 attempt-2 dataset, to isolate that variable.
 
-### Attempt 3: DAgger data + full fine-tuning (in progress)
+### Attempt 3: DAgger data + full fine-tuning (also failed — new root cause found)
 
 Same training approach as attempt 1 (full backbone fine-tuning, gradient
 checkpointing) but on the attempt-2 combined dataset (648 train questions:
-110 original heuristic + 538 DAgger-collected recovery states). Results
-pending — see `runs/doom_basic_0.6b_dagger_full/` and this section will be
-updated once it completes.
+110 original heuristic + 538 DAgger-collected recovery states).
+
+Result: **also 0% success (0/20) in closed-loop play**, and offline
+accuracy identical to attempt 2's — 43.6%, because `predictions.jsonl`
+shows the model again predicts `"left"` for **100% of all 149 test
+questions**. Same degenerate collapse as attempt 2, despite the backbone
+being fully unfrozen this time.
+
+This rules out "frozen backbone" as the sole cause and points at something
+more specific: **checkpoint selection**. The training log shows dev
+gold-NLL bottoming out at **step 36 of 132** and getting *worse* every eval
+after that (1.32 at step 84, 2.39 at step 108, 1.58 at step 132) — a
+classic overfitting curve, just peaking unusually early — even though raw
+training loss kept dropping through later steps (down to 0.24 at step
+108). Since `train.py` always keeps the checkpoint with the best dev-NLL,
+it saved the step-36 checkpoint: essentially still close to the untrained
+head's initial constant-bias guess, before the model had done much real
+learning. The later checkpoints, which trained loss suggests learned
+*something* more, were never evaluated in closed-loop play at all.
+
+A likely contributor: the dev split (30 questions) is unchanged from the
+original heuristic-only data — it was never augmented with DAgger
+states the way train was. So the selection metric optimizes for a
+narrow slice of the state distribution, while train also has to fit the
+messier, partly-off-policy DAgger states. A checkpoint that stays close
+to "always predict the safe majority class" can look deceptively good on
+that narrow dev set without having learned anything useful.
+
+**Not yet tried** (paused here for direction rather than spending another
+~2 hours unattended):
+- Evaluate the **last** checkpoint (step 132) in closed-loop play instead
+  of best-by-dev-NLL, since its training loss was competitive.
+- Augment the **dev** split with DAgger-collected states too, not just
+  train, so checkpoint selection reflects the full distribution the model
+  actually needs to handle.
+- Accept that 3 attempts is a reasonable place to pause and decide whether
+  further automated iteration is worth it.
 
 ## License
 
