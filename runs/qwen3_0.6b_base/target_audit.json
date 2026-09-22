@@ -1,0 +1,4322 @@
+[
+  {
+    "id": "support:technical:requested:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:requested:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:requested:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:issued:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:issued:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:issued:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:denied:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:denied:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:denied:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:none:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:none:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:none:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:issued:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:issued:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:issued:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:issued:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:issued:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:issued:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:processing:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:processing:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:processing:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:approved:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:approved:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:approved:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:none:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:none:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:none:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:approved:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:approved:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:approved:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:approved:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:approved:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:approved:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:none:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:none:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:none:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:issued:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:issued:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:issued:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:denied:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:denied:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:denied:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:issued:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:issued:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:issued:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:processing:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:processing:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:processing:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:issued:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:issued:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:issued:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:approved:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:approved:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:approved:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:requested:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:requested:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:requested:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:requested:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:requested:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:requested:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:requested:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:requested:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:requested:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:requested:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:requested:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:requested:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:processing:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:processing:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:processing:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:none:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:none:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:none:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:approved:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:approved:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:approved:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:none:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:none:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:none:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:denied:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:denied:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:denied:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:issued:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:issued:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:issued:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:denied:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:denied:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:denied:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:requested:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:requested:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:requested:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:approved:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:approved:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:approved:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:processing:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:processing:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:processing:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:issued:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:issued:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:issued:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:denied:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:denied:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:denied:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:none:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:none:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:none:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:none:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:none:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:none:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:processing:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:processing:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:processing:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:processing:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:processing:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:processing:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:processing:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:processing:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:processing:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:issued:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:issued:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:issued:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:requested:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:requested:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:requested:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:approved:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:approved:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:approved:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:issued:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:issued:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:issued:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:approved:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:approved:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:approved:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:requested:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:requested:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:requested:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:issued:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:issued:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:issued:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:requested:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:requested:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:requested:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:processing:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:processing:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:processing:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:approved:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:approved:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:approved:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:requested:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:requested:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:requested:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:none:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:none:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:none:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:issued:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:issued:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:issued:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:none:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:none:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:none:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:none:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:none:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:none:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:processing:3:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:processing:3:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:processing:3:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:approved:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:approved:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:approved:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:requested:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:requested:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:requested:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:none:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:none:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:none:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:approved:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:approved:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:approved:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:approved:0:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:approved:0:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:approved:0:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:processing:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:processing:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:processing:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:none:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:none:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:none:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:approved:2:route",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:approved:2:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:approved:2:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:issued:1:route",
+    "split": "train",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:issued:1:completed",
+    "split": "train",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:issued:1:severity",
+    "split": "train",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:denied:0:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:denied:0:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:denied:0:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:denied:2:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:denied:2:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:denied:2:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:processing:1:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:processing:1:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:processing:1:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:processing:0:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:processing:0:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:processing:0:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:denied:0:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:denied:0:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:denied:0:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:issued:0:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:issued:0:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:issued:0:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:none:0:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:none:0:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:none:0:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:requested:3:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:requested:3:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:requested:3:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:issued:2:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:issued:2:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:issued:2:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:processing:2:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:processing:2:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:processing:2:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:requested:1:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:requested:1:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:requested:1:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:issued:2:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:issued:2:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:issued:2:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:denied:3:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:denied:3:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:denied:3:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:requested:3:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:requested:3:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:requested:3:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:none:3:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:none:3:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:none:3:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:denied:3:route",
+    "split": "dev",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:denied:3:completed",
+    "split": "dev",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:denied:3:severity",
+    "split": "dev",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:approved:2:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:approved:2:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:approved:2:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:requested:2:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:requested:2:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:requested:2:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:none:3:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:none:3:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:none:3:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:none:0:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:none:0:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:none:0:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:denied:3:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:denied:3:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:denied:3:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:approved:0:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:approved:0:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:approved:0:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:approved:1:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:approved:1:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:approved:1:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:denied:1:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:denied:1:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:denied:1:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:issued:1:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:issued:1:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:issued:1:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:approved:3:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:approved:3:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:approved:3:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:none:1:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:none:1:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:none:1:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:issued:3:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:issued:3:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:issued:3:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:requested:3:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:requested:3:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:requested:3:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:none:2:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:none:2:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:none:2:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:denied:3:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:denied:3:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:denied:3:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:denied:2:route",
+    "split": "calibration",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:denied:2:completed",
+    "split": "calibration",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:denied:2:severity",
+    "split": "calibration",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:none:3:route",
+    "split": "test",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:none:3:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:none:3:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:denied:1:route",
+    "split": "test",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:denied:1:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:denied:1:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:denied:2:route",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:denied:2:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:denied:2:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:requested:0:route",
+    "split": "test",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:requested:0:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:requested:0:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:approved:0:route",
+    "split": "test",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:approved:0:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:approved:0:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:approved:0:route",
+    "split": "test",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:approved:0:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:approved:0:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:processing:3:route",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:processing:3:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:processing:3:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:processing:2:route",
+    "split": "test",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:processing:2:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:processing:2:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:requested:0:route",
+    "split": "test",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:requested:0:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:requested:0:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:approved:3:route",
+    "split": "test",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:approved:3:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:approved:3:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:processing:0:route",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:processing:0:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:processing:0:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:processing:1:route",
+    "split": "test",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:processing:1:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:processing:1:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:denied:3:route",
+    "split": "test",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:denied:3:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:denied:3:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:approved:3:route",
+    "split": "test",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:approved:3:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:approved:3:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:issued:1:route",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:issued:1:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:issued:1:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:denied:2:route",
+    "split": "test",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:denied:2:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:denied:2:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:none:2:route",
+    "split": "test",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:none:2:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:none:2:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:approved:3:route",
+    "split": "test",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:approved:3:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:approved:3:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:processing:2:route",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:processing:2:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:processing:2:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:denied:1:route",
+    "split": "test",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:denied:1:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:denied:1:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:issued:0:route",
+    "split": "test",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:issued:0:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:issued:0:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:denied:2:route",
+    "split": "test",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:denied:2:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:shipping:denied:2:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:none:1:route",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:none:1:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:privacy:none:1:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:denied:3:route",
+    "split": "test",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:denied:3:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:denied:3:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:none:1:route",
+    "split": "test",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:none:1:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:none:1:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:denied:0:route",
+    "split": "test",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:denied:0:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:denied:0:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:requested:1:route",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:requested:1:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:requested:1:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:processing:0:route",
+    "split": "test",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:processing:0:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:documentation:processing:0:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:denied:1:route",
+    "split": "test",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:denied:1:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:denied:1:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:requested:3:route",
+    "split": "test",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:requested:3:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:billing:requested:3:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:issued:2:route",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:issued:2:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:technical:issued:2:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:processing:3:route",
+    "split": "test",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:processing:3:completed",
+    "split": "test",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "support:account:processing:3:severity",
+    "split": "test",
+    "type": "score",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:activated:0:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:activated:0:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:activated:0:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:approved:2:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:approved:2:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:approved:2:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:requested:0:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:requested:0:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:requested:0:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:activated:2:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:activated:2:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:activated:2:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:activated:2:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:activated:2:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:activated:2:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:pending:2:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:pending:2:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:pending:2:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:pending:2:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:pending:2:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:pending:2:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:requested:1:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:requested:1:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:requested:1:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:pending:1:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:pending:1:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:pending:1:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:activated:1:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:activated:1:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:activated:1:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:requested:0:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:requested:0:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:requested:0:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:requested:1:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:requested:1:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:requested:1:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:approved:1:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:approved:1:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:approved:1:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:pending:0:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:pending:0:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:pending:0:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:requested:2:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:requested:2:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:staff:requested:2:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:approved:1:route",
+    "split": "ood",
+    "type": "choice",
+    "k": 5,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:approved:1:completed",
+    "split": "ood",
+    "type": "boolean",
+    "k": 2,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "access:visitor:approved:1:severity",
+    "split": "ood",
+    "type": "score",
+    "k": 3,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  }
+]

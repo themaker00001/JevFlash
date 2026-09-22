@@ -209,6 +209,8 @@ def evaluate(model, examples, pad_token, batch, device, path=None):
         with autocast_ctx(device):
             z, _ = model(group, pad_token)
         records.extend(prediction_record(ex, logits) for ex, logits in zip(group, z))
+        if device.type == 'mps':
+            torch.mps.empty_cache()
     if path:
         Path(path).write_text(''.join(json.dumps(r, ensure_ascii=False)+'\n' for r in records))
     eligible = [r for r in records if r['teacher_probs'] is not None]
@@ -367,6 +369,11 @@ def main():
             loss = loss_for(z, batch, args.objective).mean()
         if not torch.isfinite(loss): raise RuntimeError('Nonfinite training loss')
         loss.backward(); torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0); optimizer.step()
+        if device.type == 'mps':
+            # MPS's caching allocator rarely reuses blocks across the variable
+            # token/candidate shapes this trainer produces each step, so cached
+            # memory climbs monotonically unless it's released explicitly.
+            torch.mps.empty_cache()
         item = {'step': step+1, 'phase': 'head' if warm else 'full', 'loss': float(loss.detach()),
               'elapsed_seconds': time.perf_counter()-start}
         if not warm and ((step+1-args.head_steps) % args.eval_every == 0 or step+1 == args.head_steps+args.steps):
