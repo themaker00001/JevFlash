@@ -1,0 +1,2592 @@
+[
+  {
+    "id": "doom:basic:0:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:0:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:0:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:0:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:0:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1:5:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1:6:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2:5:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2:6:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2:7:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2:8:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2:9:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2:10:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2:11:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4:5:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4:6:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4:7:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4:8:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:5:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:5:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:5:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:5:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:5:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:5:5:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:6:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:6:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:6:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:6:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:6:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:6:5:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:6:6:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:6:7:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:7:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:7:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:7:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:7:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:7:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:8:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:8:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:9:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:9:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:9:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:9:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:9:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:9:5:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:9:6:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:9:7:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:9:8:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:10:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:10:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:10:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:10:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:10:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:10:5:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:11:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:11:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:11:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:11:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:11:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:11:5:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:11:6:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:11:7:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:11:8:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:11:9:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:11:10:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:11:11:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:12:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:12:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:12:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:12:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:12:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:13:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:13:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:13:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:13:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:13:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:13:5:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:13:6:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:14:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:14:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:14:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:14:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:14:4:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:14:5:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:14:6:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:14:7:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:15:0:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:15:1:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:15:2:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:15:3:action",
+    "split": "train",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1000:0:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1000:1:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1000:2:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1000:3:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1000:4:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1000:5:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1000:6:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1001:0:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1001:1:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1001:2:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1001:3:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1001:4:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1001:5:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1001:6:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1002:0:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1002:1:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1002:2:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1002:3:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1002:4:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1002:5:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1002:6:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1002:7:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1003:0:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1003:1:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1003:2:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1003:3:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1003:4:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1003:5:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1003:6:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:1003:7:action",
+    "split": "dev",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2000:0:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2000:1:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2000:2:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2000:3:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2000:4:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2001:0:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2001:1:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2001:2:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2001:3:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2001:4:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2001:5:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2001:6:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2001:7:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2002:0:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2002:1:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2002:2:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2002:3:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2002:4:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2002:5:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2002:6:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2002:7:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2002:8:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2003:0:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2003:1:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2003:2:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2003:3:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2003:4:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2003:5:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2003:6:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:2003:7:action",
+    "split": "calibration",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3000:0:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3000:1:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3001:0:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3001:1:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3001:2:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3001:3:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3001:4:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3002:0:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3002:1:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3002:2:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3002:3:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3002:4:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3002:5:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3002:6:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3002:7:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3003:0:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3003:1:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3003:2:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3003:3:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3003:4:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3004:0:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3004:1:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3004:2:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3004:3:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3004:4:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3004:5:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3005:0:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3005:1:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3005:2:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3005:3:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3005:4:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3005:5:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3005:6:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3005:7:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:0:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:1:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:2:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:3:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:4:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:5:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:6:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:7:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:8:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:9:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:10:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:11:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:12:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:13:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:14:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:15:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:16:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:17:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:18:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:19:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:20:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:21:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3006:22:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3007:0:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3007:1:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3007:2:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3007:3:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3007:4:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3007:5:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3007:6:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3007:7:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:3007:8:action",
+    "split": "test",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4000:0:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4000:1:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4000:2:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4000:3:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4000:4:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4000:5:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4000:6:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4000:7:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4001:0:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4001:1:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4002:0:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4002:1:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4002:2:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4002:3:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4002:4:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4003:0:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4003:1:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4003:2:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4003:3:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4003:4:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4003:5:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4003:6:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  },
+  {
+    "id": "doom:basic:4003:7:action",
+    "split": "ood",
+    "type": "choice",
+    "k": 4,
+    "teacher_raw_sum": null,
+    "teacher_proxy_usable": false,
+    "teacher_argmax_matches_gold": null,
+    "target_transform": "no_teacher"
+  }
+]

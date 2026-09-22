@@ -91,6 +91,65 @@ train / 16 dev states, so hitting 100% dev accuracy after ~130 steps is the
 model memorizing a very small, templated dataset, not evidence of broad
 capability.
 
+## ViZDoom
+
+The original Jev/NanoJev line of work evaluates on ViZDoom scenarios
+(aiming/shooting), not just templated text. `jevflash/doom_env.py` is
+NanoJev's headless ViZDoom adapter (unmodified); `build_doom_decisions.py`
+runs the `basic` scenario (a stationary monster, strafe left/right and
+shoot) under a simple proportional aim-and-shoot heuristic and records each
+step as a `{state, question, gold_action}` row, using the heuristic's own
+choice as the gold label (there's no learned "teacher" involved). 16 train
+/ 4 dev / 4 calibration / 8 test / 4 ood episodes, 149 total decision
+questions — the heuristic itself hits 100% episode success (it's simple:
+strafe toward the target's screen-space center, shoot once aligned).
+
+```bash
+pip install -r requirements-vizdoom.txt   # vizdoom==1.3.0, gymnasium==1.3.0
+python jevflash/build_doom_decisions.py --output-dir data/doom_basic_v1
+cat data/doom_basic_v1/{train,dev,calibration,test,ood}.jsonl > data/doom_basic_v1/all.jsonl
+python jevflash/train.py --input data/doom_basic_v1/all.jsonl \
+  --output-dir runs/doom_basic_0.6b --model Qwen/Qwen3-0.6B-Base \
+  --device cpu --batch-questions 6 --skip-native-baseline
+```
+
+**A real bug surfaced here**: ViZDoom states are longer text (~316 tokens
+average vs. the toy dataset's ~72), and once the backbone unfreezes,
+full fine-tuning retains every layer's activations for the whole sequence —
+this blew up to 60GB+ resident memory and thrashed the machine on plain
+CPU (not just MPS). Fixed with `model.backbone.gradient_checkpointing_enable()`
+in `train.py`, which recomputes activations during backward instead of
+storing them. Worth knowing if you extend this to longer/richer states.
+
+### Closed-loop result (model actually playing, not just scoring a dataset)
+
+`jevflash/play_doom.py` loads a trained checkpoint and drives live ViZDoom
+episodes, picking the argmax action each step — a genuinely different test
+than scoring the static dataset above.
+
+| Policy | Success rate | Mean steps-to-kill (on success) | Timed out |
+|---|---|---|---|
+| Trained Qwen3-0.6B-Base (108 steps, offline eval 48.3% acc) | **25%** (5/20) | 7.6 | 15/20 |
+| Uniform random action | **45%** (9/20) | 12.9 | 11/20 |
+
+The trained model did *worse* than random action selection. This is a
+genuine negative result, not a bug: the training set (110 questions from
+16 episodes) came entirely from the heuristic's own tight, self-correcting
+trajectory, so the model never saw what to do after a mistake. In live
+play, once it drifts even slightly off that narrow expert path, errors
+compound with no recovery signal in training — a textbook imitation-learning
+distribution-shift failure (the kind DAgger-style methods exist to fix), on
+top of a training set that's simply too small (110 examples) to fully
+fine-tune a 0.6B model without overfitting to spurious per-episode details
+in the raw JSON state text.
+
+Run it yourself:
+```bash
+python jevflash/play_doom.py --checkpoint-dir runs/doom_basic_0.6b \
+  --episodes 20 --device cpu --include-random-baseline \
+  --output results/doom_basic_eval.json
+```
+
 ## License
 
 MIT (see [LICENSE](LICENSE)). `jevflash/train.py` and
