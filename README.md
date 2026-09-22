@@ -31,11 +31,12 @@ See [`jevflash/train.py`](jevflash/train.py) for the full implementation.
 - **Gold-label training**: the toy dataset here has no teacher-model
   distillation targets, so training uses one-hot gold labels
   (`--objective gold`) instead of teacher-probability distillation.
-- **Backbone comparison**: trained the same architecture on two backbones,
-  [Qwen3-0.6B-Base](https://huggingface.co/Qwen/Qwen3-0.6B-Base) (the
-  original NanoJev backbone) and
-  [Qwen3-1.7B-Base](https://huggingface.co/Qwen/Qwen3-1.7B-Base), to see
-  whether a bigger backbone actually helps on this task.
+- **Backbone**: trained on
+  [Qwen3-0.6B-Base](https://huggingface.co/Qwen/Qwen3-0.6B-Base), the
+  original NanoJev backbone. A [Qwen3-1.7B-Base](https://huggingface.co/Qwen/Qwen3-1.7B-Base)
+  comparison run was attempted but abandoned partway through (see
+  [Results](#results) below) — it's a reasonable next step if you have
+  access to a CUDA GPU.
 
 ## Data
 
@@ -62,12 +63,33 @@ python jevflash/train.py \
 ## Results
 
 See [`results/`](results/) for per-run logs and `summary.json` outputs.
-Comparison table below is filled in after both runs complete.
 
 | Backbone | Params | Dev accuracy (best) | Dev gold-NLL (best) | Final eval accuracy | Training time |
 |---|---|---|---|---|---|
-| Qwen3-0.6B-Base | 0.6B | TBD | TBD | TBD | TBD |
-| Qwen3-1.7B-Base | 1.7B | TBD | TBD | TBD | TBD |
+| Qwen3-0.6B-Base | 0.6B | 100% | 3.5e-6 | 95.4% | 31.3 min (132 steps, CPU) |
+| Qwen3-1.7B-Base | 1.7B | — | — | — | abandoned at step 37/132 |
+
+Both runs were on CPU, not GPU — this Mac has no CUDA device, and PyTorch's
+MPS (Apple GPU) backend leaked memory unboundedly on this workload (see
+commit history): it JIT-compiles and caches a distinct graph per unique
+input shape, and this trainer's batches vary in both token length and
+candidate count every step, so the graph cache never stops growing
+(observed 26GB+ resident before the run was killed).
+
+The 0.6B run finished in ~31 minutes on CPU. The 1.7B run was expected to
+take proportionally longer (~3x params) but instead ran at roughly **13x**
+the per-step time of 0.6B — CPU throughput did not scale linearly with
+model size on this hardware, likely a memory-bandwidth bottleneck rather
+than a compute one. At that rate it would have needed 5+ hours, so it was
+stopped at step 37/132 rather than let run. Worth rerunning on an actual
+GPU (CUDA) if you want the real backbone comparison — `--device cuda` is
+already supported in `train.py`.
+
+Note the 0.6B numbers themselves should be read as a training-dynamics
+sanity check, not a generalization result: this toy dataset has only 64
+train / 16 dev states, so hitting 100% dev accuracy after ~130 steps is the
+model memorizing a very small, templated dataset, not evidence of broad
+capability.
 
 ## License
 
