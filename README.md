@@ -437,6 +437,55 @@ candidate position.
 data (`train.py`) and at live inference (`play_doom.py`), so position 0
 is no longer coincidentally always `left`. Attempt 8 tests this directly.
 
+### Attempt 8: shuffle candidate order — theory partially confirmed, real (if modest) result
+
+Same dataset and class-balanced loss as attempt 7, plus candidate-order
+shuffling at both training and inference time.
+
+**The positional-bias theory was partially right.** Offline, `shoot`
+predictions nearly tripled (19 → 57 out of 309) and, critically, closed-
+loop play is **no longer degenerate**: rendering different seeds no
+longer produces identical action sequences. Seed 9002 succeeds in 3
+moves (`left, shoot, shoot` → kill); seed 9000 fails, stuck strafing left
+for the full 40 steps. Real, seed-dependent behavior — the first sign of
+that since attempt 5.
+
+| Metric | Value |
+|---|---|
+| Closed-loop success rate | **30%** (6/20) |
+| Outcomes | 6 killed (all in exactly 3 steps), 14 timed out |
+| vs. random (45%) | still worse |
+
+Still not a full fix: `right` is never predicted at all (0/309 offline),
+and `left` still dominates (252/309). The model seems to have learned a
+strong "try `left, shoot, shoot` first" opening prior — which happens to
+be correct for however many monster spawn positions align with it (hence
+the six 3-step kills), but when that doesn't work, it has no fallback
+except to keep repeating `left` forever, rather than genuinely
+re-assessing target position turn by turn.
+
+Attempt-by-attempt scorecard (updated):
+
+| Attempt | Failure/success mode | Closed-loop success |
+|---|---|---|
+| 1 | real, not enough data | 25% |
+| 2 | degenerate (frozen backbone) | 0% |
+| 3 | degenerate (unfrozen, same result) | 0% |
+| 4 | **fake** (step-index shortcut) | 50% (not real) |
+| 5 | real, locks into shoot-spam after a miss | 35% |
+| 6 | real, overcorrected to never-shoot | 0% |
+| 7 | real offline, degenerate live (positional bias) | 0% |
+| 8 | real, partial fix, strong "left" opening prior | 30% |
+
+Takeaway: eight attempts in, the best real (non-fake) results remain
+attempt 5 (35%) and this one (30%) — both below random (45%), but for
+clearly different, diagnosed reasons rather than mystery failures. The
+positional-shuffle fix measurably helped (broke the pure collapse,
+tripled shoot usage) without being sufficient on its own — the model
+still needs either more/better data around the "opening didn't work,
+now what" scenario, or a longer/different training schedule to actually
+learn continuous re-assessment instead of a fixed opening gambit.
+
 ## License
 
 MIT (see [LICENSE](LICENSE)). `jevflash/train.py` and
