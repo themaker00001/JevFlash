@@ -403,6 +403,41 @@ random yet. A next step with a clear rationale: rebalance or upweight
 how many strafe-correction examples get added relative to shoot examples,
 or use a weighted loss), rather than just concatenating everything.
 
+### Attempt 7: class-balanced loss — partial fix offline, same collapse live
+
+Added `--balance-classes` to `train.py`: weights each training example's
+loss inversely to how often its gold label (`left`/`right`/`shoot`)
+appears in train, so attempt 6's imbalance (`left`:367, `right`:171,
+`shoot`:77) doesn't drown out `shoot` the way it did.
+
+Offline signal looked encouraging: best accuracy of any real attempt
+(55.0%), and for the first time `shoot` gets predicted at all (19 times
+out of 309, versus attempt 6's zero). But **`right` disappeared entirely
+this time** (0 predictions), and closed-loop play tells the real story:
+rendered 2 different seeds (9000, 9002) and got **byte-for-byte identical
+40-action sequences of constant `left`**, never shooting — the exact same
+degenerate collapse as attempts 2 and 3, just reached via completely
+different data and loss this time. (The batch closed-loop eval script
+crashed without writing output this run; the 2 confirmed rendered
+episodes already establish the pattern conclusively, so it wasn't
+re-run before moving on.)
+
+This is the third separate attempt (2, 3, 7 — frozen backbone, unfrozen,
+unfrozen+class-balanced-loss) that converges to the identical "always
+left" failure despite very different setups. That repetition is itself a
+clue: every single question in this dataset presents candidates in the
+exact same fixed order (`left, right, shoot, noop`, baked into
+`doom_env.py`'s dict construction). Working theory: the model learned
+"always pick position 0" as a content-independent shortcut — since that
+position is a perfect, if useless, predictor available in every example —
+rather than reading the state at all. Data-side fixes (more data, class
+weighting) don't touch this, because they operate on label frequency, not
+candidate position.
+
+**Fix**: shuffle candidate order per example, both when loading training
+data (`train.py`) and at live inference (`play_doom.py`), so position 0
+is no longer coincidentally always `left`. Attempt 8 tests this directly.
+
 ## License
 
 MIT (see [LICENSE](LICENSE)). `jevflash/train.py` and
