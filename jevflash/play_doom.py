@@ -5,6 +5,7 @@ dataset). Also runs a uniform-random baseline for comparison.
 """
 import argparse
 import json
+import random
 import statistics
 from pathlib import Path
 
@@ -36,6 +37,11 @@ def load_checkpoint(checkpoint_dir, device):
 def build_example(obs, tokenizer, max_length=512):
     state = obs["state"]
     ids = list(obs["candidates"])
+    # Shuffle to match training (see train.py's load_examples): the live
+    # env always presents candidates in the same fixed order, so without
+    # this, any residual positional bias would still show up here even
+    # after training on shuffled data.
+    random.shuffle(ids)
     texts = [f"{key}: {obs['candidates'][key]}" for key in ids]
     segments = [f"State:\n{state}\n",
                 "Question type: choice\nQuestion:\nEliminate the monster before the task deadline. "

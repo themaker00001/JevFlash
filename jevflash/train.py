@@ -67,6 +67,15 @@ def load_examples(path, tokenizer, max_length):
                 gold = int(row['gold'][qid])
             elif typ == 'choice':
                 ids = list(q['criteria'])
+                # Shuffle candidate order per example. In this dataset every
+                # question presents candidates in the exact same fixed order
+                # (left, right, shoot, noop, from doom_env.py's dict) --
+                # confirmed (3 separate training runs, different data/loss
+                # setups) to let the model default to "always pick the first
+                # slot" instead of reading the state, since position 0 was a
+                # perfect, content-independent shortcut. Shuffling removes
+                # that signal entirely.
+                random.shuffle(ids)
                 texts = [f"{key}: {q['criteria'][key]}" for key in ids]
                 gold = ids.index(row['gold'][qid])
             else:
