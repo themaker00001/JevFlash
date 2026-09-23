@@ -16,6 +16,7 @@ import json
 import math
 import random
 import time
+from collections import Counter
 from pathlib import Path
 
 import torch
@@ -186,7 +187,30 @@ def loss_for(logits, examples, objective):
             if ex['teacher_probs'] is None:
                 raise ValueError('Quarantined teacher target entered training')
             target[i, :len(ex['candidate_ids'])] = torch.tensor(ex['teacher_probs'], device=logits.device)
-    return -(target * logits.float().log_softmax(-1)).sum(-1)
+    per_example = -(target * logits.float().log_softmax(-1)).sum(-1)
+    weights = torch.tensor([ex.get('loss_weight', 1.0) for ex in examples], device=logits.device)
+    return per_example * weights
+
+
+def label_key(ex):
+    # For 'choice' questions the label identity is the actual candidate
+    # string (e.g. 'left'/'right'/'shoot'), since that's what can be
+    # imbalanced across a dataset merged from multiple sources (e.g.
+    # heuristic + DAgger-collected recovery data skewing hard toward one
+    # action). For other question types, gold_index is itself the class.
+    if ex['type'] == 'choice':
+        return (ex['type'], ex['candidate_ids'][ex['gold_index']])
+    return (ex['type'], ex['gold_index'])
+
+
+def assign_balanced_loss_weights(train):
+    counts = Counter(label_key(ex) for ex in train)
+    n_classes, n_total = len(counts), len(train)
+    class_weight = {k: n_total / (n_classes * c) for k, c in counts.items()}
+    mean_w = sum(class_weight[label_key(ex)] for ex in train) / n_total
+    for ex in train:
+        ex['loss_weight'] = class_weight[label_key(ex)] / mean_w
+    return dict(counts)
 
 
 def prediction_record(ex, logits):
@@ -312,6 +336,11 @@ def main():
     p.add_argument('--freeze-backbone', action='store_true',
                    help="Never unfreeze the backbone; train only the decision head. "
                         "Much less prone to overfitting on small datasets.")
+    p.add_argument('--balance-classes', action='store_true',
+                   help="Weight each training example's loss inversely to how often its gold "
+                        "label appears in train, so a class that dominates the data (e.g. after "
+                        "merging in DAgger recovery states skewed toward one action) doesn't "
+                        "drown out rarer-but-still-necessary labels.")
     args = p.parse_args()
     if args.steps <= 0 or args.head_steps < 0 or args.eval_every <= 0 or args.batch_questions <= 0:
         p.error('steps/eval-every/batch-questions must be positive; head-steps must be nonnegative')
@@ -347,12 +376,16 @@ def main():
     model.backbone.gradient_checkpointing_enable()
     train = [e for e in bysplit['train'] if args.objective == 'gold' or e['teacher_probs'] is not None]
     if len(train) < args.batch_questions: raise ValueError('Too few valid training questions')
+    for ex in train:
+        ex['loss_weight'] = 1.0
+    class_counts = assign_balanced_loss_weights(train) if args.balance_classes else None
     config = {**vars(args), 'device': device.type,
               'resolved_model_revision': getattr(model.backbone.config, '_commit_hash', None),
               'data_sha256': hashlib.sha256(Path(args.input).read_bytes()).hexdigest(),
               'deps': {k: importlib.metadata.version(k) for k in ['torch', 'transformers', 'safetensors', 'numpy']},
               'gpu': torch.cuda.get_device_name(0) if device.type == 'cuda' else ('Apple MPS' if device.type == 'mps' else 'cpu'),
               'train_questions': len(train), 'all_train_questions': len(bysplit['train']),
+              'train_class_counts': {str(k): v for k, v in class_counts.items()} if class_counts else None,
               'parameter_storage': 'float32', 'forward_autocast': 'bfloat16' if device.type == 'cuda' else 'fp32',
               'teacher_target': 'identity rounded proxy, sum=1 only' if args.objective == 'teacher' else 'one-hot gold label',
               'parallelism': 'flat complete candidate paths in one backbone forward; no prefix sharing',
