@@ -1,0 +1,13 @@
+{
+  "best_step": 132,
+  "selected_on": "dev gold NLL",
+  "training_seconds": 6635.689278624952,
+  "final_all_eval": {
+    "accuracy": 0.7605177993527508,
+    "gold_nll": 0.5827483489072393,
+    "teacher_ce": null,
+    "questions": 309,
+    "teacher_eligible": 0
+  },
+  "max_gpu_allocated_gb": null
+}

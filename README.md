@@ -346,6 +346,63 @@ worth trying: reward/penalize based on whether shots actually land, or
 add training examples specifically covering "you just missed, realign"
 states.
 
+### Attempt 6: DAgger from attempt 5's real mistakes — overcorrected into a new failure mode
+
+Diagnosis of attempt 5's flaw: it locks into shooting and never
+re-adjusts after missing. Root cause: the heuristic-only training data
+literally contains **zero examples** of "you're shooting but not aligned,
+now what" — once the heuristic aligns, the target never drifts and the
+heuristic never needs to re-strafe, so that scenario never appears in
+training. Fix attempted: run attempt 5's own checkpoint live (16 train +
+4 dev episodes, using the now-fixed `--split` argument so dev is properly
+augmented this time), label every state it visits with the heuristic's
+corrective action, and retrain. Dataset: 615 train / 190 dev questions.
+
+**Training signal looked great**: dev accuracy climbed to 89.5% by the
+final step, and for the first time, the checkpoint-selection picked the
+*last* step (132/132) as best, with dev gold-NLL dropping to 0.33 — a
+real, monotonic improvement curve, not a plateau. Final offline accuracy
+76.1%, the best of any attempt by a wide margin.
+
+**But it overcorrected into a different, still-broken policy.**
+`predictions.jsonl` shows it predicts only `left` (179x) and `right`
+(130x) — **it never predicts `shoot`, not once**, despite `shoot` being a
+real gold label 22% of the time. Verified in live play: every rendered
+episode is a pure left/right oscillation for the full 40 steps, never
+firing a single shot.
+
+| Metric | Value |
+|---|---|
+| Closed-loop success rate | **0%** (0/20) |
+| Outcome | all 20 episodes timed out, zero kills |
+
+Root cause: the DAgger recovery data from attempt 5 is dominated by
+"you're misaligned, strafe back" examples (attempt 5's actual failure
+mode), which skewed the combined gold-label distribution hard toward
+`left`/`right` (241/309 questions) versus `shoot` (68/309, ~22%) — a
+**class-imbalance problem this time, not a data-leakage or distribution-
+shift one**. The model learned "strafing is almost always the right
+answer" a little too well, at the expense of ever committing to fire.
+
+Attempt-by-attempt scorecard:
+
+| Attempt | Failure mode | Closed-loop success |
+|---|---|---|
+| 1 | real, but not enough data | 25% |
+| 2 | degenerate (backbone frozen, learned nothing) | 0% |
+| 3 | degenerate (same, backbone unfrozen didn't matter) | 0% |
+| 4 | **fake** (step-index shortcut, exposed by rendering) | 50% (not real) |
+| 5 | real, but never re-adjusts after a miss | 35% |
+| 6 | real, but **never shoots** (overcorrected, class imbalance) | 0% |
+
+Takeaway: three real, distinct, diagnosed failure modes in a row (not
+enough data → no recovery examples → recovery examples skewing the class
+balance) is a genuine research trajectory, even though nothing has beaten
+random yet. A next step with a clear rationale: rebalance or upweight
+`shoot`-labeled examples when combining heuristic + DAgger data (e.g. cap
+how many strafe-correction examples get added relative to shoot examples,
+or use a weighted loss), rather than just concatenating everything.
+
 ## License
 
 MIT (see [LICENSE](LICENSE)). `jevflash/train.py` and
