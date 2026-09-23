@@ -1,0 +1,268 @@
+{
+  "checkpoint": "runs/doom_basic_0.6b_v2_dagger",
+  "backbone": "Qwen/Qwen3-0.6B-Base",
+  "device": "cpu",
+  "model": {
+    "episodes": 20,
+    "success_rate": 0.0,
+    "mean_steps_to_kill": null,
+    "median_steps_to_kill": null,
+    "outcomes": {
+      "task_deadline": 20
+    },
+    "runs": [
+      {
+        "seed": 9000,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9001,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9002,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9003,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9004,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9005,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9006,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9007,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9008,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9009,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9010,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9011,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9012,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9013,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9014,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9015,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9016,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9017,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9018,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9019,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      }
+    ]
+  },
+  "random_baseline": {
+    "episodes": 20,
+    "success_rate": 0.45,
+    "mean_steps_to_kill": 12.88888888888889,
+    "median_steps_to_kill": 11,
+    "outcomes": {
+      "task_deadline": 11,
+      "target_killed": 9
+    },
+    "runs": [
+      {
+        "seed": 9000,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9001,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9002,
+        "success": true,
+        "steps": 8,
+        "outcome": "target_killed"
+      },
+      {
+        "seed": 9003,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9004,
+        "success": true,
+        "steps": 18,
+        "outcome": "target_killed"
+      },
+      {
+        "seed": 9005,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9006,
+        "success": true,
+        "steps": 6,
+        "outcome": "target_killed"
+      },
+      {
+        "seed": 9007,
+        "success": true,
+        "steps": 27,
+        "outcome": "target_killed"
+      },
+      {
+        "seed": 9008,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9009,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9010,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9011,
+        "success": true,
+        "steps": 9,
+        "outcome": "target_killed"
+      },
+      {
+        "seed": 9012,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9013,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9014,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9015,
+        "success": true,
+        "steps": 17,
+        "outcome": "target_killed"
+      },
+      {
+        "seed": 9016,
+        "success": false,
+        "steps": 40,
+        "outcome": "task_deadline"
+      },
+      {
+        "seed": 9017,
+        "success": true,
+        "steps": 11,
+        "outcome": "target_killed"
+      },
+      {
+        "seed": 9018,
+        "success": true,
+        "steps": 15,
+        "outcome": "target_killed"
+      },
+      {
+        "seed": 9019,
+        "success": true,
+        "steps": 5,
+        "outcome": "target_killed"
+      }
+    ]
+  }
+}

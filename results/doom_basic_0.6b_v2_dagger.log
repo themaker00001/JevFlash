@@ -1,0 +1,18 @@
+Loading weights:   0%|          | 0/310 [00:00<?, ?it/s]Loading weights:   0%|          | 1/310 [00:00<02:53,  1.78it/s]Loading weights: 100%|██████████| 310/310 [00:00<00:00, 521.30it/s]
+{"step": 1, "phase": "head", "loss": 1.3814066648483276, "elapsed_seconds": 24.671478290925734}
+{"step": 13, "phase": "full", "loss": 1.3484750986099243, "elapsed_seconds": 346.1887737499783}
+{"step": 25, "phase": "full", "loss": 0.9333241581916809, "elapsed_seconds": 802.9843842079863}
+{"step": 36, "phase": "full", "loss": 0.9811716675758362, "elapsed_seconds": 1221.1011669579893, "dev": {"accuracy": 0.6684210526315789, "gold_nll": 0.8628776432428207, "teacher_ce": null, "questions": 190, "teacher_eligible": 0}}
+{"step": 37, "phase": "full", "loss": 0.8883859515190125, "elapsed_seconds": 1512.2613330410095}
+{"step": 49, "phase": "full", "loss": 1.2017265558242798, "elapsed_seconds": 1967.9736820829567}
+{"step": 60, "phase": "full", "loss": 0.6281635165214539, "elapsed_seconds": 2387.5575562079903, "dev": {"accuracy": 0.6684210526315789, "gold_nll": 0.8654534451282766, "teacher_ce": null, "questions": 190, "teacher_eligible": 0}}
+{"step": 61, "phase": "full", "loss": 1.1530472040176392, "elapsed_seconds": 2676.5049516250147}
+{"step": 73, "phase": "full", "loss": 0.9296679496765137, "elapsed_seconds": 3124.959054249921}
+{"step": 84, "phase": "full", "loss": 0.8978097438812256, "elapsed_seconds": 3539.359326125006, "dev": {"accuracy": 0.6684210526315789, "gold_nll": 0.8886571601270346, "teacher_ce": null, "questions": 190, "teacher_eligible": 0}}
+{"step": 85, "phase": "full", "loss": 0.8105188012123108, "elapsed_seconds": 3834.534886249923}
+{"step": 97, "phase": "full", "loss": 1.0144330263137817, "elapsed_seconds": 4294.5817269579275}
+{"step": 108, "phase": "full", "loss": 0.37142303586006165, "elapsed_seconds": 4716.851207291009, "dev": {"accuracy": 0.6684210526315789, "gold_nll": 0.9169738799532213, "teacher_ce": null, "questions": 190, "teacher_eligible": 0}}
+{"step": 109, "phase": "full", "loss": 0.6833627820014954, "elapsed_seconds": 5008.456512124976}
+{"step": 121, "phase": "full", "loss": 0.672336757183075, "elapsed_seconds": 5463.243733290932}
+{"step": 132, "phase": "full", "loss": 0.30600523948669434, "elapsed_seconds": 5882.517584540998, "dev": {"accuracy": 0.8947368421052632, "gold_nll": 0.3346272262283513, "teacher_ce": null, "questions": 190, "teacher_eligible": 0}}
+{"done": "runs/doom_basic_0.6b_v2_dagger", "best_step": 132, "eval": {"accuracy": 0.7605177993527508, "gold_nll": 0.5827483489072393, "teacher_ce": null, "questions": 309, "teacher_eligible": 0}}
