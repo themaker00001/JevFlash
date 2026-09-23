@@ -222,6 +222,45 @@ that narrow dev set without having learned anything useful.
 - Accept that 3 attempts is a reasonable place to pause and decide whether
   further automated iteration is worth it.
 
+### Attempt 4: more DAgger data (dev-augmentation fix was broken, but it still worked) — **first real improvement**
+
+Intent: collect a second batch of DAgger states specifically to augment
+the **dev** split (not just train), so checkpoint selection would reflect
+the harder distribution instead of a narrow 30-question heuristic-only
+dev set.
+
+**Bug found mid-run**: `collect_dagger_doom.py` hardcoded `split: "train"`
+on every row it wrote, regardless of output filename — `train.py` groups
+rows by that internal field, not by which file they came from. So the 160
+rows intended for `dev` silently landed in `train` instead. This attempt
+ended up testing something different than intended: full fine-tuning with
+more train data (808 questions total) but the *same* narrow 30-question
+dev set as attempts 1-3. (Fixed now: `collect_dagger_doom.py` takes an
+explicit `--split` argument for any future attempt at the real fix.)
+
+Despite testing the wrong thing, the result is the best so far:
+
+| Attempt | Backbone state | Offline accuracy | Predictions | Closed-loop success | vs. random (45%) |
+|---|---|---|---|---|---|
+| 1 | full fine-tune, 110 train Q | 48.3% | differentiated | 25% | worse |
+| 2 | frozen, 648 train Q | 43.6% | 100% "left" (degenerate) | 0% | much worse |
+| 3 | full fine-tune, 648 train Q | 43.6% | 100% "left" (degenerate) | 0% | much worse |
+| 4 | full fine-tune, 808 train Q | 33.6% | "shoot" 106x / "left" 43x (2 classes, no "right") | **50%** | **better** |
+
+Best checkpoint was step 84/132 — much later in training than attempts
+2-3's step 36, and not degenerate this time (uses 2 of 3 action classes,
+just miscalibrated toward over-shooting and never turning right). Lower
+*offline* accuracy than attempts 2/3 but dramatically better *closed-loop*
+play — a reminder that offline accuracy on this dataset is a poor proxy
+for actual game performance, since a constant-predictor can look
+deceptively decent on paper while a genuinely-reactive-but-imperfect
+policy can look worse on paper and play much better live.
+
+Takeaway: raw amount of training data mattered more here than precisely
+which checkpoint-selection fix was applied. The properly-fixed
+dev-augmentation experiment (now that `--split` actually works) is a
+reasonable next step to see if it improves further on this 50% baseline.
+
 ## License
 
 MIT (see [LICENSE](LICENSE)). `jevflash/train.py` and
