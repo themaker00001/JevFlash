@@ -261,6 +261,35 @@ which checkpoint-selection fix was applied. The properly-fixed
 dev-augmentation experiment (now that `--split` actually works) is a
 reasonable next step to see if it improves further on this 50% baseline.
 
+**Correction, found by actually watching it play:** the 50% success rate
+above is not real skill. Rendering live episodes with
+`jevflash/render_model_episode.py` (captures actual screen frames while
+the checkpoint drives the game, instead of just reading aggregate stats)
+shows the model produces the **exact same 9-action cycle** —
+`left, shoot, shoot, left, left, left, left, shoot, shoot` — repeating,
+regardless of seed. Verified across 3 different seeds (different random
+monster positions): byte-for-byte identical action sequences every time.
+It is not reacting to the game state at all.
+
+Root cause: the state JSON includes `remaining_decisions` and
+`episode_tick` fields that count down/up **deterministically by a fixed
+amount every step, in every episode, independent of where the target
+actually is**. That's a far easier pattern to memorize ("do X when
+remaining_decisions=38") than the real signal (target bbox position
+relative to screen center) — classic feature leakage. The 50% success
+rate is just whatever fraction of random monster starting positions
+happen to align with this fixed, unconditional dance, not the model
+tracking anything. The earlier "prediction diversity" check (2 classes
+used across 149 offline test questions) didn't catch this, because it
+only checks isolated random states, not whether behavior is actually
+conditioned on them across a sequence — this is exactly why closed-loop,
+watched play matters more than any offline metric here.
+
+**Real next step**: strip or coarsely bucket `remaining_decisions` /
+`episode_tick` from the state text before the next attempt, so the model
+can't shortcut on step-index and is forced to use the target's actual
+position.
+
 ## License
 
 MIT (see [LICENSE](LICENSE)). `jevflash/train.py` and
