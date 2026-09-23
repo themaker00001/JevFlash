@@ -1,0 +1,42 @@
+{
+  "schema_version": "jevflash-doom-v1",
+  "scenario": "basic",
+  "policy": "heuristic_proportional_aim",
+  "splits": {
+    "train": {
+      "episodes": 16,
+      "states": 110,
+      "questions": 110,
+      "episode_success_rate": 1.0,
+      "sha256": "1e183848c1c40dda9d119afebed2ccab580af971d9a021a1891a0f79ae6e494f"
+    },
+    "dev": {
+      "episodes": 4,
+      "states": 30,
+      "questions": 30,
+      "episode_success_rate": 1.0,
+      "sha256": "469bedcd7cbd54a7288a7b8d5c49eb0dde9edc9e2e1ae92a09d288d5b6c15c92"
+    },
+    "calibration": {
+      "episodes": 4,
+      "states": 30,
+      "questions": 30,
+      "episode_success_rate": 1.0,
+      "sha256": "db7e47d0c702d805e93a191efd4370aa2f8fe4b79c15ca75d13b598c3de14549"
+    },
+    "test": {
+      "episodes": 8,
+      "states": 66,
+      "questions": 66,
+      "episode_success_rate": 1.0,
+      "sha256": "f039314b38540ec96f70637c6ae3cb3457bf4f7389e4756efd15840999cd675f"
+    },
+    "ood": {
+      "episodes": 4,
+      "states": 23,
+      "questions": 23,
+      "episode_success_rate": 1.0,
+      "sha256": "4b2323f961c4ae553f00a436a0e35b2766a0494ee40136068619b4fb3b18824f"
+    }
+  }
+}

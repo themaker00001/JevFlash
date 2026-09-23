@@ -185,8 +185,12 @@ class UnifiedDoomEnv:
                     continue
                 labels.append({"id": int(label.object_id), "name": str(label.object_name), "bbox": box})
         labels.sort(key=lambda row: (row["id"], row["name"], row["bbox"]))
+        # episode_tick deliberately excluded: it counts up by a fixed amount
+        # every step in every episode, independent of the target's position,
+        # and a model trained on it learns "act by step index" instead of
+        # "act by target position" (confirmed: produced an identical fixed
+        # action sequence regardless of seed).
         return {
-            "episode_tick": self._episode_tick,
             "health": variables["HEALTH"], "ammo": variables["SELECTED_WEAPON_AMMO"],
             "position": [round(variables[f"POSITION_{axis}"], 3) for axis in "XYZ"],
             "angle_degrees": round(variables["ANGLE"], 3),
@@ -206,10 +210,13 @@ class UnifiedDoomEnv:
             "shoot": f"Hold attack for {duration} Doom ticks.",
             "noop": f"Wait without pressing buttons for {duration} Doom ticks.",
         }
+        # remaining_decisions/remaining_ticks deliberately excluded from the
+        # model-visible payload for the same reason as episode_tick above --
+        # they're deterministic countdowns unrelated to the target's
+        # position, and directly enable step-index shortcut learning.
         payload = {
             "scenario": self.scenario, "goal": "Eliminate the monster before the task deadline.",
             "screen_size": [320, 240], "bbox_format": "x,y,width,height; origin top left",
-            "remaining_decisions": remaining, "remaining_ticks": ticks,
             "observed_history": list(self._history), "terminal": self._done,
         }
         return {
