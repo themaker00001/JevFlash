@@ -59,6 +59,9 @@ def main():
     p.add_argument("--checkpoint-dir", required=True)
     p.add_argument("--output", default="data/doom_basic_v1/train_dagger.jsonl")
     p.add_argument("--episodes", type=int, default=16)
+    p.add_argument("--split", default="train", choices=["train", "dev", "calibration", "test", "ood"],
+                   help="Which split these DAgger rows belong to -- train.py groups by this field, "
+                        "not by output filename, so this must be set explicitly to augment dev/etc.")
     p.add_argument("--seed-offset", type=int, default=6000, help="Must not overlap build_doom_decisions.py's seed ranges")
     p.add_argument("--max-steps", type=int, default=40)
     p.add_argument("--frame-skip", type=int, default=4)
@@ -73,7 +76,7 @@ def main():
     try:
         for seed in seeds:
             episode_rows, success = collect_episode(env, seed, model, tokenizer, device,
-                                                      "doom_basic_dagger_v1", "train", args.max_steps)
+                                                      "doom_basic_dagger_v1", args.split, args.max_steps)
             rows.extend(episode_rows)
             successes += int(success)
     finally:
