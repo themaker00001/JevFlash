@@ -417,10 +417,9 @@ this time** (0 predictions), and closed-loop play tells the real story:
 rendered 2 different seeds (9000, 9002) and got **byte-for-byte identical
 40-action sequences of constant `left`**, never shooting — the exact same
 degenerate collapse as attempts 2 and 3, just reached via completely
-different data and loss this time. (The batch closed-loop eval script
-crashed without writing output this run; the 2 confirmed rendered
-episodes already establish the pattern conclusively, so it wasn't
-re-run before moving on.)
+different data and loss this time. Full 20-episode closed-loop eval
+confirms it: **0% success, all 20 episodes timed out** — matching the
+2 rendered episodes exactly.
 
 This is the third separate attempt (2, 3, 7 — frozen backbone, unfrozen,
 unfrozen+class-balanced-loss) that converges to the identical "always
