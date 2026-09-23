@@ -290,6 +290,62 @@ watched play matters more than any offline metric here.
 can't shortcut on step-index and is forced to use the target's actual
 position.
 
+### Attempt 5: leak fixed — first genuinely real result (still worse than random)
+
+`jevflash/doom_env.py` now excludes `remaining_decisions`,
+`remaining_ticks`, and `episode_tick` from the model-visible state.
+Dataset regenerated from scratch (`data/doom_basic_v2/`, since the old
+data has the leak baked into its serialized text) and retrained fresh
+with the same full-fine-tuning config as attempt 1.
+
+**Verified properly this time, before trusting any number**: rendered 3
+different seeds with `render_model_episode.py` and compared the actual
+action sequences directly.
+
+| Seed | Actions | Outcome |
+|---|---|---|
+| 9000 | `right, right, shoot, right, shoot×36...` | timeout |
+| 9005 | `right, right, shoot, right, shoot×7` | killed at step 11 |
+| 9010 | `right, shoot, right, shoot×37...` | timeout |
+
+Unlike attempt 4 (byte-for-byte identical regardless of seed), these
+genuinely differ — different initial strafe counts, different outcomes.
+The leak fix worked: **this is a real, state-conditioned policy, not a
+memorized shortcut.**
+
+But it has a real flaw: it strafes briefly, then locks into shooting
+repeatedly for the rest of the episode regardless of whether it's still
+aligned — it never re-adjusts after an initial miss. Full closed-loop
+result (20 episodes, same seeds 9000-9019 as all prior attempts):
+
+| Metric | Value |
+|---|---|
+| Success rate | **35%** (7/20) |
+| Steps-to-kill on success | 4, 4, 7, 7, 11, 11, 13 (genuinely varied) |
+| Outcomes | 7 killed, 13 timed out |
+| vs. random (45%) | worse |
+| vs. attempt 1 (25%, also real) | better |
+
+Full attempt comparison:
+
+| Attempt | Real or shortcut? | Closed-loop success |
+|---|---|---|
+| 1 | real | 25% |
+| 2 | degenerate (constant "left") | 0% |
+| 3 | degenerate (constant "left") | 0% |
+| 4 | **fake** (fixed action-index shortcut, exposed by rendering) | 50% (not real) |
+| 5 | **real** (verified via multi-seed action diversity) | 35% |
+
+Takeaway: fixing the leak produced the first checkpoint that's
+simultaneously non-degenerate *and* passes the "does behavior actually
+vary with the state" check — genuine progress on validity, even though
+raw performance (35%) is still below random and below attempt 4's fake
+number. The remaining problem is a real policy-quality issue (no
+re-alignment after the first shot), not a data-leakage one. A next step
+worth trying: reward/penalize based on whether shots actually land, or
+add training examples specifically covering "you just missed, realign"
+states.
+
 ## License
 
 MIT (see [LICENSE](LICENSE)). `jevflash/train.py` and
