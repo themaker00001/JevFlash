@@ -1,0 +1,41 @@
+{
+  "input": "data/doom_basic_v2/all_dagger.jsonl",
+  "output_dir": "runs/doom_basic_0.6b_v2_balanced",
+  "model": "Qwen/Qwen3-0.6B-Base",
+  "revision": "main",
+  "objective": "gold",
+  "set_head": "attention",
+  "steps": 120,
+  "head_steps": 12,
+  "batch_questions": 6,
+  "eval_every": 24,
+  "max_length": 512,
+  "seed": 17,
+  "backbone_lr": 2e-05,
+  "head_lr": 0.0002,
+  "device": "cpu",
+  "skip_native_baseline": true,
+  "freeze_backbone": false,
+  "balance_classes": true,
+  "resolved_model_revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+  "data_sha256": "4560ed9827567e3b577b6f620db51e485c29f4702845fbb14953d0c56367f123",
+  "deps": {
+    "torch": "2.14.0",
+    "transformers": "5.17.0",
+    "safetensors": "0.8.0",
+    "numpy": "2.5.3"
+  },
+  "gpu": "cpu",
+  "train_questions": 615,
+  "all_train_questions": 615,
+  "train_class_counts": {
+    "('choice', 'left')": 367,
+    "('choice', 'shoot')": 77,
+    "('choice', 'right')": 171
+  },
+  "parameter_storage": "float32",
+  "forward_autocast": "fp32",
+  "teacher_target": "one-hot gold label",
+  "parallelism": "flat complete candidate paths in one backbone forward; no prefix sharing",
+  "parameter_count": 596250498
+}
