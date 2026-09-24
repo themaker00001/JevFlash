@@ -116,7 +116,9 @@ class UnifiedDoomEnv:
             game.set_window_visible(False)
             game.set_sound_enabled(False)
             game.set_console_enabled(False)
-            game.set_screen_resolution(vzd.ScreenResolution.RES_320X240)
+            res_name = self.spec.get("screen_resolution", "RES_320X240")
+            game.set_screen_resolution(getattr(vzd.ScreenResolution, res_name))
+            self._screen_dims = tuple(int(x) for x in res_name[4:].split("X"))
             game.set_screen_format(vzd.ScreenFormat.RGB24)
             game.set_labels_buffer_enabled(True)
             game.set_objects_info_enabled(False)
@@ -216,7 +218,7 @@ class UnifiedDoomEnv:
         # position, and directly enable step-index shortcut learning.
         payload = {
             "scenario": self.scenario, "goal": "Eliminate the monster before the task deadline.",
-            "screen_size": [320, 240], "bbox_format": "x,y,width,height; origin top left",
+            "screen_size": list(self._screen_dims), "bbox_format": "x,y,width,height; origin top left",
             "observed_history": list(self._history), "terminal": self._done,
         }
         return {

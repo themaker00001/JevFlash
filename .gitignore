@@ -18,3 +18,4 @@ runs/**/*.jsonl
 
 # ViZDoom writes its runtime config wherever the process's cwd happens to be
 _vizdoom.ini
+.venv-expert/
