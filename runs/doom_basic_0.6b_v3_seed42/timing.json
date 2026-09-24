@@ -1,0 +1,32 @@
+{
+  "scope": "warm inference including tensor assembly and device copies; excludes tokenization/network",
+  "device": "cpu",
+  "prefix_sharing": false,
+  "autoregressive_decode_steps": 0,
+  "results": [
+    {
+      "states": 1,
+      "questions": 1,
+      "candidate_paths": 4,
+      "median_ms": 696.8240409623832,
+      "questions_per_second": 1.4350825189941794,
+      "repeats": 6
+    },
+    {
+      "states": 4,
+      "questions": 4,
+      "candidate_paths": 16,
+      "median_ms": 4200.025249971077,
+      "questions_per_second": 0.9523752267983497,
+      "repeats": 6
+    },
+    {
+      "states": 8,
+      "questions": 8,
+      "candidate_paths": 32,
+      "median_ms": 8303.48570807837,
+      "questions_per_second": 0.9634508062339275,
+      "repeats": 6
+    }
+  ]
+}
