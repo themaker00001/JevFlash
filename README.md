@@ -486,6 +486,60 @@ still needs either more/better data around the "opening didn't work,
 now what" scenario, or a longer/different training schedule to actually
 learn continuous re-assessment instead of a fixed opening gambit.
 
+### Attempt 9: NanoJev's actual technique, applied to our own heuristic — still collapsed
+
+Research into the real upstream NanoJev repo (not this replica) found
+their actual mechanism: they don't train an RL agent in-repo at all. They
+download a frozen, pretrained, third-party PPO policy (a genuine
+CNN+LSTM trained on millions of pixel frames) and use it purely to
+generate labels. The key technique: during data collection, the
+**executed** action is the expert's choice 90% of the time and a random
+action 10% of the time, but the **training label** is always the
+expert's correct action regardless of what was executed. This
+manufactures realistic "recognize a mistake, recover" examples for free.
+
+Our own heuristic is already a good expert (100% episode success, unlike
+NanoJev's own hand-coded controller which only hit 50%), so instead of
+integrating their pretrained checkpoint, `build_doom_decisions.py` gained
+`--epsilon` to apply the same technique to our heuristic. Result: 200
+train episodes / 1,501 questions (13.6x attempt 1's 110), naturally
+well-balanced labels (`shoot` is the actual majority: 779/392/330) — no
+DAgger or class-weighting patch needed to fix the balance after the fact.
+
+**Result: 0% success, all 20 episodes timed out** — the exact same pure
+`left`-forever collapse as attempts 2, 3, and 7, this time on our best,
+most realistic, most balanced dataset yet. This is now the fourth time
+this specific failure has appeared across four very different data/loss
+setups.
+
+**One important new finding**: checked `untrained_head.jsonl` (the
+model's predictions *before* any training happens) — it predicts mostly
+`noop`/`shoot`, not `left`. So the `left` bias is not present at
+initialization; it emerges specifically *during* training, consistently,
+regardless of what data or loss changes are made. That rules out a
+content-independent architectural default, but points at something in
+the training dynamics — and notably, **every single one of our 9
+attempts has used the identical random seed (17)**, controlling both
+weight initialization and batch sampling order. NanoJev's own supervision
+run trained 3 arms across 2 different seeds and reported the best one —
+an implicit admission that seed variance matters even for them. We've
+never varied it once. That's the most promising, cheapest untested lever
+going into a possible attempt 10.
+
+Updated scorecard:
+
+| Attempt | Mode | Closed-loop success |
+|---|---|---|
+| 1 | real, not enough data | 25% |
+| 2 | degenerate (frozen backbone) | 0% |
+| 3 | degenerate (unfrozen) | 0% |
+| 4 | **fake** (step-index shortcut) | 50% (not real) |
+| 5 | real, locks into shoot-spam | 35% |
+| 6 | real, overcorrected to never-shoot | 0% |
+| 7 | real offline, degenerate live | 0% |
+| 8 | real, partial fix, strong "left" opening prior | 30% |
+| 9 | degenerate again, despite best data yet | 0% |
+
 ## License
 
 MIT (see [LICENSE](LICENSE)). `jevflash/train.py` and
