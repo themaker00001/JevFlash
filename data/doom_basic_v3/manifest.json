@@ -1,0 +1,48 @@
+{
+  "schema_version": "jevflash-doom-v1",
+  "scenario": "basic",
+  "policy": "heuristic_proportional_aim",
+  "epsilon": 0.15,
+  "splits": {
+    "train": {
+      "episodes": 200,
+      "states": 1501,
+      "questions": 1501,
+      "episode_success_rate": 1.0,
+      "off_policy_steps": 171,
+      "sha256": "dd4c10c64d4a62c751dcb22ad8060f82561d46bd23c2c052b34402bcb03d3011"
+    },
+    "dev": {
+      "episodes": 8,
+      "states": 50,
+      "questions": 50,
+      "episode_success_rate": 1.0,
+      "off_policy_steps": 2,
+      "sha256": "89d0e4b3c261e6f50e0e32354dfdb0fc8faaf56128381b5acffe16f56499abda"
+    },
+    "calibration": {
+      "episodes": 4,
+      "states": 24,
+      "questions": 24,
+      "episode_success_rate": 1.0,
+      "off_policy_steps": 1,
+      "sha256": "73c92fd21d2d739d4e403e8f229a68a462ead5a7d351397ff93003a3d80b42c6"
+    },
+    "test": {
+      "episodes": 16,
+      "states": 107,
+      "questions": 107,
+      "episode_success_rate": 1.0,
+      "off_policy_steps": 12,
+      "sha256": "04425ee11c894a21800c94bebb9c5a28db440743fbb9550f163b15e8af5d3520"
+    },
+    "ood": {
+      "episodes": 8,
+      "states": 53,
+      "questions": 53,
+      "episode_success_rate": 1.0,
+      "off_policy_steps": 7,
+      "sha256": "06398934f6b3693d90b66ec782b5e7cd1579c9000c358c9f7fc7d54f8ec419db"
+    }
+  }
+}
