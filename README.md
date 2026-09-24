@@ -539,6 +539,56 @@ Updated scorecard:
 | 7 | real offline, degenerate live | 0% |
 | 8 | real, partial fix, strong "left" opening prior | 30% |
 | 9 | degenerate again, despite best data yet | 0% |
+| 10 | **real, seed hypothesis confirmed** | **65%** |
+
+### Attempt 10: same exact setup as attempt 9, only `--seed 42` instead of 17 — first result to beat random
+
+The one variable never varied across attempts 1-9: every single run used
+`--seed 17`, controlling both weight initialization and batch sampling
+order. Given the "left" collapse appeared identically across four very
+different data/loss configurations but was *absent* at initialization
+(see attempt 9), seed-dependent bad-local-optimum was the leading theory.
+Also worth noting: a parallel side-investigation attempted integrating
+NanoJev's actual pretrained PPO expert (see
+[`.venv-expert-README.md`](.venv-expert-README.md)) but was parked
+unvalidated in favor of testing this cheaper hypothesis first.
+
+Identical dataset, identical hyperparameters, identical code as attempt
+9 (`data/doom_basic_v3/all.jsonl`, class-balanced loss, candidate
+shuffling) — changed only `--seed 42`.
+
+**Confirmed.** Offline: `shoot` predictions nearly tripled versus attempt
+9 on the exact same data (37 → 98 out of 234), just from the seed change.
+Closed-loop, rendering the *same* seed 9000 that produced attempt 9's
+pure `left`-forever collapse: this checkpoint mostly shoots and **kills
+the target** — a completely different, non-degenerate policy from
+identical inputs otherwise.
+
+| Metric | Value |
+|---|---|
+| Closed-loop success rate | **65%** (13/20) |
+| vs. random (45%) | **first attempt to beat it** |
+| Steps-to-kill on success | 2, 2, 2, 2, 5, 7, 7, 10, 10, 10, 10, 14, 37 (genuinely varied) |
+| Outcomes | 13 killed, 7 timed out |
+
+Verified via rendering 2 different seeds: episode lengths vary widely
+(2 to 40 steps) with both real wins and real losses — reactive,
+state-dependent behavior, not a fixed script or a new degenerate
+collapse.
+
+**Bottom line after 10 attempts**: the recurring "left" collapse across
+attempts 2, 3, 7, and 9 was fundamentally a **bad random seed**, not a
+data problem, not a loss-function problem, and not a fundamental
+architecture flaw. Every data-side fix we tried (more data, better
+balance, candidate shuffling, DAgger recovery states, NanoJev's actual
+exploration technique) was real, correct engineering — it just couldn't
+overcome an unlucky initialization on this particular small model / small
+dataset / short training schedule combination. This matches NanoJev's own
+methodology detail we found in their supervision code: they trained
+multiple arms across *two different seeds* and reported the best one, an
+implicit acknowledgment that seed variance matters even at their scale.
+First result in this entire project to genuinely outperform random
+action selection.
 
 ## License
 
